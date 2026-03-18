@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aporia – Privacy Policy</title>
+  <style>
+    :root {
+      --bg: #0a0a0a;
+      --surface: #141414;
+      --accent: #b8a06a;
+      --primary: #e8e0d0;
+      --secondary: #888070;
+      --divider: #2a2a2a;
+      --radius: 10px;
+      --max-width: 720px;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: var(--bg);
+      color: var(--primary);
+      font-family: Georgia, 'Times New Roman', serif;
+      font-size: 16px;
+      line-height: 1.8;
+      padding: 0 20px 80px;
+    }
+
+    .container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+    }
+
+    header {
+      padding: 48px 0 32px;
+      border-bottom: 1px solid var(--divider);
+      margin-bottom: 40px;
+    }
+
+    .logo {
+      font-size: 13px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 16px;
+    }
+
+    h1 {
+      font-size: 28px;
+      font-weight: normal;
+      color: var(--primary);
+      margin-bottom: 8px;
+    }
+
+    .updated {
+      font-size: 13px;
+      color: var(--secondary);
+      font-style: italic;
+    }
+
+    /* Language toggle */
+    .lang-toggle {
+      display: flex;
+      gap: 0;
+      margin-top: 24px;
+      border: 1px solid var(--divider);
+      border-radius: 6px;
+      width: fit-content;
+      overflow: hidden;
+    }
+
+    .lang-btn {
+      background: none;
+      border: none;
+      color: var(--secondary);
+      font-family: inherit;
+      font-size: 13px;
+      letter-spacing: 1px;
+      padding: 8px 20px;
+      cursor: pointer;
+      transition: background 0.2s, color 0.2s;
+    }
+
+    .lang-btn.active {
+      background: var(--accent);
+      color: var(--bg);
+      font-weight: bold;
+    }
+
+    /* Sections */
+    .section {
+      margin-bottom: 40px;
+    }
+
+    h2 {
+      font-size: 11px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 16px;
+    }
+
+    h3 {
+      font-size: 17px;
+      font-weight: normal;
+      color: var(--primary);
+      margin-bottom: 10px;
+    }
+
+    p {
+      color: var(--secondary);
+      margin-bottom: 14px;
+    }
+
+    ul {
+      list-style: none;
+      margin-bottom: 14px;
+    }
+
+    ul li {
+      color: var(--secondary);
+      padding-left: 18px;
+      position: relative;
+      margin-bottom: 6px;
+    }
+
+    ul li::before {
+      content: '–';
+      position: absolute;
+      left: 0;
+      color: var(--accent);
+    }
+
+    .divider {
+      border: none;
+      border-top: 1px solid var(--divider);
+      margin: 40px 0;
+    }
+
+    .highlight-box {
+      border: 1px solid rgba(184, 160, 106, 0.25);
+      border-radius: var(--radius);
+      background: rgba(184, 160, 106, 0.04);
+      padding: 20px 24px;
+      margin-bottom: 14px;
+    }
+
+    .highlight-box p {
+      margin-bottom: 0;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+      border-bottom: 1px solid rgba(184, 160, 106, 0.3);
+    }
+
+    a:hover {
+      border-bottom-color: var(--accent);
+    }
+
+    footer {
+      margin-top: 60px;
+      padding-top: 32px;
+      border-top: 1px solid var(--divider);
+      text-align: center;
+    }
+
+    footer p {
+      font-size: 13px;
+      color: var(--secondary);
+    }
+
+    /* Lang visibility */
+    [data-lang] { display: none; }
+    .lang-it [data-lang="it"],
+    .lang-en [data-lang="en"] { display: block; }
+
+    /* inline elements inside p */
+    p [data-lang],
+    li [data-lang] { display: inline; }
+  </style>
+</head>
+<body class="lang-it">
+<div class="container">
+
+  <header>
+    <div class="logo">Aporia</div>
+    <h1>
+      <span data-lang="it">Informativa sulla Privacy</span>
+      <span data-lang="en">Privacy Policy</span>
+    </h1>
+    <p class="updated">
+      <span data-lang="it">Ultimo aggiornamento: 18 marzo 2026</span>
+      <span data-lang="en">Last updated: March 18, 2026</span>
+    </p>
+    <div class="lang-toggle">
+      <button class="lang-btn active" onclick="setLang('it')">IT</button>
+      <button class="lang-btn" onclick="setLang('en')">EN</button>
+    </div>
+  </header>
+
+  <!-- Intro -->
+  <div class="section">
+    <div class="highlight-box">
+      <p data-lang="it">
+        Aporia è un diario filosofico personale. Il tuo pensiero è tuo.
+        Questa pagina spiega in modo chiaro quali dati raccogliamo, perché e come li proteggiamo.
+      </p>
+      <p data-lang="en">
+        Aporia is a personal philosophical journal. Your thinking is yours.
+        This page clearly explains what data we collect, why, and how we protect it.
+      </p>
+    </div>
+  </div>
+
+  <hr class="divider" />
+
+  <!-- 1. Chi siamo -->
+  <div class="section">
+    <h2>
+      <span data-lang="it">1. Titolare del trattamento</span>
+      <span data-lang="en">1. Data Controller</span>
+    </h2>
+    <p data-lang="it">
+      Il titolare del trattamento dei dati personali è lo sviluppatore individuale di Aporia.
+      Per qualsiasi richiesta relativa alla privacy puoi scrivere a:
+      <a href="mailto:chinaskimassimo@gmail.com">chinaskimassimo@gmail.com</a>
+    </p>
+    <p data-lang="en">
+      The data controller is the individual developer of Aporia.
+      For any privacy-related request, you can write to:
+      <a href="mailto:chinaskimassimo@gmail.com">chinaskimassimo@gmail.com</a>
+    </p>
+  </div>
+
+  <hr class="divider" />
+
+  <!-- 2. Dati raccolti -->
+  <div class="section">
+    <h2>
+      <span data-lang="it">2. Dati raccolti</span>
+      <span data-lang="en">2. Data We Collect</span>
+    </h2>
+
+    <h3 data-lang="it">Dati di autenticazione</h3>
+    <h3 data-lang="en">Authentication data</h3>
+    <p data-lang="it">
+      Quando crei un account, raccogliamo il tuo indirizzo e-mail tramite
+      <strong>Firebase Authentication</strong> (Google LLC). Se accedi con Google Sign-In,
+      riceviamo solo l'indirizzo e-mail associato all'account Google.
+      Non raccogliamo nome, cognome, numero di telefono né foto del profilo.
+    </p>
+    <p data-lang="en">
+      When you create an account, we collect your email address via
+      <strong>Firebase Authentication</strong> (Google LLC). If you sign in with Google Sign-In,
+      we receive only the email address linked to your Google account.
+      We do not collect first name, last name, phone number, or profile photo.
+    </p>
+
+    <h3 data-lang="it">Riflessioni del diario</h3>
+    <h3 data-lang="en">Journal reflections</h3>
+    <p data-lang="it">
+      Le riflessioni che scrivi vengono salvate <strong>localmente sul dispositivo</strong>
+      tramite il database Isar. Non vengono caricate su alcun server remoto, né condivise
+      con terze parti, fatta eccezione per il testo inviato al Mentore AI (vedi sotto).
+    </p>
+    <p data-lang="en">
+      Your journal entries are stored <strong>locally on your device</strong>
+      using the Isar database. They are not uploaded to any remote server or shared with
+      third parties, except for the text sent to the AI Mentor (see below).
+    </p>
+
+    <h3 data-lang="it">Elaborazione AI (Mentore Socratico)</h3>
+    <h3 data-lang="en">AI processing (Socratic Mentor)</h3>
+    <p data-lang="it">
+      Quando richiedi una risposta dal Mentore, il testo della riflessione viene inviato
+      a una <strong>Firebase Cloud Function</strong> (ospitata in Europa – europe-west1),
+      che lo trasmette alle API di <strong>OpenAI</strong> (ChatGPT / GPT-4o mini) per
+      generare una domanda socratica. Il testo non viene conservato sui nostri server
+      al termine dell'elaborazione. OpenAI tratta i dati secondo la propria
+      <a href="https://openai.com/policies/privacy-policy" target="_blank">privacy policy</a>.
+    </p>
+    <p data-lang="en">
+      When you request a response from the Mentor, the text of your reflection is sent
+      to a <strong>Firebase Cloud Function</strong> (hosted in Europe – europe-west1),
+      which forwards it to <strong>OpenAI</strong> APIs (GPT-4o mini) to generate a
+      Socratic question. The text is not retained on our servers after processing.
+      OpenAI processes data according to its own
+      <a href="https://openai.com/policies/privacy-policy" target="_blank">privacy policy</a>.
+    </p>
+
+    <h3 data-lang="it">Acquisti in-app</h3>
+    <h3 data-lang="en">In-app purchases</h3>
+    <p data-lang="it">
+      Gli acquisti sono gestiti da <strong>RevenueCat</strong> e tramite
+      <strong>Google Play Billing</strong>. RevenueCat riceve un identificatore anonimo
+      dell'utente per verificare lo stato dell'abbonamento. Non raccogliamo dati di
+      pagamento: tutto il processo finanziario è gestito direttamente da Google.
+      Consulta la <a href="https://www.revenuecat.com/privacy" target="_blank">privacy policy di RevenueCat</a>.
+    </p>
+    <p data-lang="en">
+      In-app purchases are managed by <strong>RevenueCat</strong> and
+      <strong>Google Play Billing</strong>. RevenueCat receives an anonymous user
+      identifier to verify subscription status. We do not collect payment data;
+      the entire financial process is handled directly by Google.
+      See <a href="https://www.revenuecat.com/privacy" target="_blank">RevenueCat's privacy policy</a>.
+    </p>
+
+    <h3 data-lang="it">Notifiche push</h3>
+    <h3 data-lang="en">Push notifications</h3>
+    <p data-lang="it">
+      Se attivi i promemoria giornalieri, l'app utilizza le notifiche locali del dispositivo
+      tramite <strong>flutter_local_notifications</strong>. Nessun dato viene inviato a server
+      esterni per questo scopo. Le notifiche vengono generate interamente sul dispositivo.
+    </p>
+    <p data-lang="en">
+      If you enable daily reminders, the app uses local device notifications via
+      <strong>flutter_local_notifications</strong>. No data is sent to external servers for this
+      purpose. Notifications are generated entirely on-device.
+    </p>
+  </div>
+
+  <hr class="divider" />
+
+  <!-- 3. Finalità -->
+  <div class="section">
+    <h2>
+      <span data-lang="it">3. Finalità del trattamento</span>
+      <span data-lang="en">3. Purposes of Processing</span>
+    </h2>
+    <ul>
+      <li data-lang="it">Autenticare l'utente e proteggere l'accesso al diario</li>
+      <li data-lang="it">Generare domande filosofiche personalizzate tramite AI</li>
+      <li data-lang="it">Gestire abbonamenti e verificarne lo stato</li>
+      <li data-lang="it">Inviare promemoria locali se richiesto dall'utente</li>
+
+      <li data-lang="en">Authenticate the user and protect access to the journal</li>
+      <li data-lang="en">Generate personalized philosophical questions via AI</li>
+      <li data-lang="en">Manage subscriptions and verify their status</li>
+      <li data-lang="en">Send local reminders if requested by the user</li>
+    </ul>
+    <p data-lang="it">
+      Non utilizziamo i tuoi dati per pubblicità, profilazione commerciale,
+      o per qualsiasi scopo diverso da quelli elencati sopra.
+    </p>
+    <p data-lang="en">
+      We do not use your data for advertising, commercial profiling,
+      or for any purpose other than those listed above.
+    </p>
+  </div>
+
+  <hr class="divider" />
+
+  <!-- 4. Condivisione -->
+  <div class="section">
+    <h2>
+      <span data-lang="it">4. Condivisione dei dati</span>
+      <span data-lang="en">4. Data Sharing</span>
+    </h2>
+    <p data-lang="it">
+      Non vendiamo, noleggiamo né cediamo i tuoi dati personali a terze parti
+      per scopi di marketing. I dati vengono condivisi solo con i seguenti fornitori
+      tecnici, esclusivamente per l'erogazione del servizio:
+    </p>
+    <p data-lang="en">
+      We do not sell, rent, or transfer your personal data to third parties
+      for marketing purposes. Data is shared only with the following technical providers,
+      solely to deliver the service:
+    </p>
+    <ul>
+      <li data-lang="it"><strong>Google LLC</strong> – Firebase Authentication, Cloud Functions, Google Play</li>
+      <li data-lang="it"><strong>OpenAI LLC</strong> – elaborazione testo per risposte AI</li>
+      <li data-lang="it"><strong>RevenueCat Inc.</strong> – gestione abbonamenti</li>
+
+      <li data-lang="en"><strong>Google LLC</strong> – Firebase Authentication, Cloud Functions, Google Play</li>
+      <li data-lang="en"><strong>OpenAI LLC</strong> – text processing for AI responses</li>
+      <li data-lang="en"><strong>RevenueCat Inc.</strong> – subscription management</li>
+    </ul>
+  </div>
+
+  <hr class="divider" />
+
+  <!-- 5. Conservazione -->
+  <div class="section">
+    <h2>
+      <span data-lang="it">5. Conservazione dei dati</span>
+      <span data-lang="en">5. Data Retention</span>
+    </h2>
+    <p data-lang="it">
+      I dati di autenticazione (e-mail) vengono conservati su Firebase finché l'account
+      è attivo. Le riflessioni del diario risiedono sul dispositivo dell'utente e vengono
+      eliminate quando l'app viene disinstallata o l'utente cancella i dati dell'app.
+      Il testo inviato all'AI per la generazione delle domande non viene archiviato
+      sui nostri server oltre il tempo necessario all'elaborazione.
+    </p>
+    <p data-lang="en">
+      Authentication data (email) is retained on Firebase for as long as the account
+      is active. Journal reflections reside on the user's device and are deleted when
+      the app is uninstalled or the user clears the app's data.
+      Text sent to the AI for question generation is not stored on our servers beyond
+      the time needed for processing.
+    </p>
+  </div>
+
+  <hr class="divider" />
+
+  <!-- 6. Diritti -->
+  <div class="section">
+    <h2>
+      <span data-lang="it">6. I tuoi diritti</span>
+      <span data-lang="en">6. Your Rights</span>
+    </h2>
+    <p data-lang="it">
+      In qualità di utente hai i seguenti diritti in merito ai tuoi dati personali:
+    </p>
+    <p data-lang="en">
+      As a user, you have the following rights regarding your personal data:
+    </p>
+    <ul>
+      <li data-lang="it"><strong>Accesso</strong> – sapere quali dati deteniamo su di te</li>
+      <li data-lang="it"><strong>Rettifica</strong> – correggere dati inesatti</li>
+      <li data-lang="it"><strong>Cancellazione</strong> – richiedere la rimozione del tuo account e dei dati associati</li>
+      <li data-lang="it"><strong>Portabilità</strong> – ottenere i tuoi dati in formato leggibile</li>
+      <li data-lang="it"><strong>Opposizione</strong> – opporsi a trattamenti non strettamente necessari</li>
+
+      <li data-lang="en"><strong>Access</strong> – know what data we hold about you</li>
+      <li data-lang="en"><strong>Rectification</strong> – correct inaccurate data</li>
+      <li data-lang="en"><strong>Erasure</strong> – request deletion of your account and associated data</li>
+      <li data-lang="en"><strong>Portability</strong> – obtain your data in a readable format</li>
+      <li data-lang="en"><strong>Objection</strong> – object to processing not strictly necessary</li>
+    </ul>
+    <p data-lang="it">
+      Per esercitare qualsiasi diritto scrivi a
+      <a href="mailto:chinaskimassimo@gmail.com">chinaskimassimo@gmail.com</a>.
+      Risponderemo entro 30 giorni.
+    </p>
+    <p data-lang="en">
+      To exercise any right, write to
+      <a href="mailto:chinaskimassimo@gmail.com">chinaskimassimo@gmail.com</a>.
+      We will respond within 30 days.
+    </p>
+  </div>
+
+  <hr class="divider" />
+
+  <!-- 7. Minori -->
+  <div class="section">
+    <h2>
+      <span data-lang="it">7. Minori</span>
+      <span data-lang="en">7. Children</span>
+    </h2>
+    <p data-lang="it">
+      Aporia non è destinata a bambini di età inferiore a 13 anni.
+      Non raccogliamo consapevolmente dati di minori. Se sei genitore o tutore
+      e ritieni che tuo figlio abbia creato un account, contattaci immediatamente.
+    </p>
+    <p data-lang="en">
+      Aporia is not intended for children under the age of 13.
+      We do not knowingly collect data from minors. If you are a parent or guardian
+      and believe your child has created an account, please contact us immediately.
+    </p>
+  </div>
+
+  <hr class="divider" />
+
+  <!-- 8. Sicurezza -->
+  <div class="section">
+    <h2>
+      <span data-lang="it">8. Sicurezza</span>
+      <span data-lang="en">8. Security</span>
+    </h2>
+    <p data-lang="it">
+      Adottiamo misure tecniche e organizzative ragionevoli per proteggere i tuoi dati:
+      le comunicazioni con i server avvengono tramite HTTPS/TLS, Firebase garantisce
+      la crittografia dei dati at-rest e in-transit, e le API key non sono mai esposte
+      nel codice client.
+    </p>
+    <p data-lang="en">
+      We take reasonable technical and organizational measures to protect your data:
+      communications with servers occur over HTTPS/TLS, Firebase ensures encryption
+      of data at rest and in transit, and API keys are never exposed in client-side code.
+    </p>
+  </div>
+
+  <hr class="divider" />
+
+  <!-- 9. Modifiche -->
+  <div class="section">
+    <h2>
+      <span data-lang="it">9. Modifiche a questa policy</span>
+      <span data-lang="en">9. Changes to This Policy</span>
+    </h2>
+    <p data-lang="it">
+      Potremmo aggiornare questa informativa periodicamente. La versione più recente
+      sarà sempre disponibile su questa pagina con la data di aggiornamento.
+      Per modifiche sostanziali invieremo una notifica nell'app.
+    </p>
+    <p data-lang="en">
+      We may update this policy periodically. The most recent version will always be
+      available on this page with the update date. For material changes we will send
+      an in-app notification.
+    </p>
+  </div>
+
+  <hr class="divider" />
+
+  <!-- 10. Contatti -->
+  <div class="section">
+    <h2>
+      <span data-lang="it">10. Contatti</span>
+      <span data-lang="en">10. Contact</span>
+    </h2>
+    <p data-lang="it">
+      Per qualsiasi domanda relativa a questa informativa sulla privacy:
+      <a href="mailto:chinaskimassimo@gmail.com">chinaskimassimo@gmail.com</a>
+    </p>
+    <p data-lang="en">
+      For any question regarding this privacy policy:
+      <a href="mailto:chinaskimassimo@gmail.com">chinaskimassimo@gmail.com</a>
+    </p>
+  </div>
+
+  <footer>
+    <p data-lang="it">© 2026 Aporia. Tutti i diritti riservati.</p>
+    <p data-lang="en">© 2026 Aporia. All rights reserved.</p>
+  </footer>
+
+</div>
+
+<script>
+  function setLang(lang) {
+    document.body.className = 'lang-' + lang;
+    document.querySelectorAll('.lang-btn').forEach(btn => {
+      btn.classList.toggle('active', btn.textContent.toLowerCase() === lang);
+    });
+    document.documentElement.lang = lang;
+  }
+</script>
+</body>
+</html>
