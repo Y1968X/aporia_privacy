@@ -26,6 +26,15 @@
       font-size: 15px;
       color: #333;
     }
+    .warning {
+      background: #fff8e1;
+      border-left: 4px solid #f9a825;
+      padding: 12px 16px;
+      border-radius: 4px;
+      margin: 24px 0;
+      font-size: 15px;
+      color: #555;
+    }
     a { color: #4a90e2; }
     .divider {
       border: none;
@@ -47,24 +56,28 @@
   <!-- ITALIANO -->
   <p class="lang-label">🇮🇹 Italiano</p>
   <h1>Elimina il tuo account Aporia</h1>
-  <p>Puoi eliminare definitivamente il tuo account Aporia e tutti i dati associati direttamente dall'app.</p>
+  <p>Aporia è progettata per proteggere la tua privacy: <strong>quasi tutti i tuoi dati sono salvati localmente sul tuo dispositivo</strong> e non sui nostri server. Solo il profilo e le sessioni di dialogo vengono salvati online.</p>
 
-  <h2>Come eliminare l'account</h2>
+  <h2>Come eliminare completamente i tuoi dati</h2>
+  <p>Per una eliminazione completa segui questo ordine:</p>
   <ol>
     <li>Apri l'app <strong>Aporia</strong></li>
     <li>Tocca l'icona <span class="badge">⚙ Impostazioni</span></li>
     <li>Scorri in basso e tocca <span class="badge">Elimina Account</span></li>
-    <li>Conferma l'eliminazione</li>
+    <li>Conferma l'eliminazione — i dati online vengono cancellati immediatamente</li>
+    <li>Disinstalla l'app dal tuo dispositivo — i dati locali vengono cancellati</li>
   </ol>
 
-  <p>Il tuo account e tutti i tuoi dati (voci del diario, sessioni di dialogo) verranno <strong>eliminati immediatamente e in modo permanente</strong>. Questa azione non può essere annullata.</p>
+  <div class="warning">
+    ⚠️ <strong>Importante:</strong> elimina prima l'account dall'app, poi disinstalla. Se disinstalli prima, non potrai più accedere alla funzione di eliminazione account.
+  </div>
 
-  <h2>Dati eliminati</h2>
-  <p>Quando elimini il tuo account vengono rimossi definitivamente:</p>
+  <h2>Cosa viene eliminato e dove</h2>
   <ul>
-    <li>Il tuo profilo (nome, email)</li>
-    <li>Tutte le voci del diario</li>
-    <li>Tutte le sessioni di dialogo con Aporia</li>
+    <li>✅ <strong>Profilo (nome, email)</strong> — salvato online → eliminato con "Elimina Account"</li>
+    <li>✅ <strong>Sessioni di dialogo con Aporia</strong> — salvate online → eliminate con "Elimina Account"</li>
+    <li>📱 <strong>Voci del diario</strong> — salvate solo localmente sul dispositivo → eliminate disinstallando l'app</li>
+    <li>📱 <strong>Impostazioni e preferenze</strong> — salvate solo localmente → eliminate disinstallando l'app</li>
   </ul>
 
   <h2>Hai bisogno di aiuto?</h2>
@@ -76,24 +89,28 @@
   <!-- ENGLISH -->
   <p class="lang-label">🇬🇧 English</p>
   <h1>Delete Your Aporia Account</h1>
-  <p>You can permanently delete your Aporia account and all associated data directly from the app.</p>
+  <p>Aporia is designed to protect your privacy: <strong>almost all your data is stored locally on your device</strong>, not on our servers. Only your profile and dialogue sessions are stored online.</p>
 
-  <h2>How to delete your account</h2>
+  <h2>How to completely delete your data</h2>
+  <p>For a complete deletion, follow this order:</p>
   <ol>
     <li>Open the <strong>Aporia</strong> app</li>
     <li>Tap the <span class="badge">⚙ Settings</span> icon</li>
     <li>Scroll down and tap <span class="badge">Delete Account</span></li>
-    <li>Confirm the deletion</li>
+    <li>Confirm the deletion — your online data is deleted immediately</li>
+    <li>Uninstall the app from your device — your local data is deleted</li>
   </ol>
 
-  <p>Your account and all your data (journal entries, dialogue sessions) will be <strong>permanently deleted immediately</strong>. This action cannot be undone.</p>
+  <div class="warning">
+    ⚠️ <strong>Important:</strong> delete your account from within the app first, then uninstall. If you uninstall first, you will no longer be able to access the account deletion feature.
+  </div>
 
-  <h2>Data deleted</h2>
-  <p>When you delete your account the following data is permanently removed:</p>
+  <h2>What is deleted and where</h2>
   <ul>
-    <li>Your profile (name, email)</li>
-    <li>All journal entries</li>
-    <li>All Aporia dialogue sessions</li>
+    <li>✅ <strong>Profile (name, email)</strong> — stored online → deleted with "Delete Account"</li>
+    <li>✅ <strong>Aporia dialogue sessions</strong> — stored online → deleted with "Delete Account"</li>
+    <li>📱 <strong>Journal entries</strong> — stored locally on device only → deleted by uninstalling the app</li>
+    <li>📱 <strong>Settings and preferences</strong> — stored locally only → deleted by uninstalling the app</li>
   </ul>
 
   <h2>Need help?</h2>
@@ -104,3 +121,4 @@
 
 </body>
 </html>
+
